@@ -1,19 +1,23 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const app = express();
 const path = require('path');
 const router = express.Router();
 
 // __dirname : It will resolve to project folder.
-router.get('/',function(req,res){
-  res.sendFile(path.join(__dirname + '/index.html'));
-});
+// router.get('/',function(req,res){
+//   res.sendFile(path.join(__dirname + '/index.html'));
+// });
 
-router.get('/stud_login', function(req,res){
-  res.sendFile(path.join(__dirname + '/stud_login.html'));
-});
+// router.get('/stud_login', function(req,res){
+//   res.sendFile(path.join(__dirname + '/stud_login.html'));
+// });
 
-// for css and img files
+// path for all the files inside the project
 app.use(express.static(path.join(__dirname, '/')));
+
+app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.json());
 
 // add the router
 app.use('/', router);
