@@ -1,7 +1,7 @@
 {
   "name": "pup-job--fair-final",
   "version": "1.0.0",
-  "description": "",
+  "description": "* Run Windows PowerShell\r * Go to project directory\r * Use the commad below\r * Then copy this to your browser http://localhost:3000/",
   "main": "index.js",
   "scripts": {
     "start": "nodemon app.js",
