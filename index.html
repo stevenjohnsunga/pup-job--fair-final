@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PUP Job Fair</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="public/css/style.css" />
   </head>
   <body>
     <main>
@@ -15,7 +15,7 @@
         <header>
           <div class="container">
             <div class="logo">
-              <img src="./img/logo.png" alt="Logo" />
+              <img src="public/img/logo.png" alt="Logo" />
               <h3>PUP Job Fair</h3>
             </div>
 
@@ -54,7 +54,7 @@
             </div>
 
             <div class="right" id="bannerimg">
-              <img src="./img/whitebg.png" id="getImage"  alt="Image" class="person" />
+              <img src="public/img/whitebg.png" id="getImage"  alt="Image" class="person" />
             </div>
           </div>
         </div>
@@ -69,8 +69,6 @@
         </div>
       </div>
 
-
-      
     </main>
     <div class="myft">
     <footer>
@@ -136,17 +134,17 @@
     <!-- JavaScript Files -->
       <script>
 
-function changeImage() {
+        function changeImage() {
             var Image_Id = document.getElementById('getImage');
-            if (Image_Id.src.match("./img/whitebg.png")) {
-                Image_Id.src = "./img/darkbg.png";
+            if (Image_Id.src.match("public/img/whitebg.png")) {
+                Image_Id.src = "public/img/darkbg.png";
             }
             else {
-                Image_Id.src = "./img/whitebg.png";
+                Image_Id.src = "public/img/whitebg.png";
             }
         } 
       </script>
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-    <script src="js/app1.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

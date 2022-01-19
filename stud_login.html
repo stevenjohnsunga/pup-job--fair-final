@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign in & Sign up Form</title>
-    <link rel="stylesheet" href="css/student-login_style.css" />
+    <link rel="stylesheet" href="public/css/student-login_style.css" />
   </head>
   <body>
     <main>
@@ -15,7 +15,7 @@
             <form action="" autocomplete="off" class="sign-in-form">
               <div class="logo">
                 <a href="index.html">
-                <img src="./img/logo_s.png" alt="puplogo" />
+                <img src="public/img/logo_s.png" alt="puplogo" />
                 <h4>PUP Job Fair</h4>
                 </a>
               </div>
@@ -58,10 +58,10 @@
               </div>
             </form>
 
-            <form autocomplete="off" class="sign-up-form">
+            <form action='' autocomplete="off" class="sign-up-form">
               <div class="logo">
                 <a href="index.html">
-                <img src="./img/logo_s.png" alt="puplogo" />
+                <img src="public/img/logo_s.png" alt="puplogo" />
                 <h4>PUP Job Fair</h4>
                 </a>
               </div>
@@ -75,6 +75,7 @@
               <div class="actual-form">
                 <div class="input-wrap">
                   <input
+                    id="s_num"
                     type="text"
                     minlength="4"
                     class="input-field"
@@ -86,6 +87,7 @@
 
                 <div class="input-wrap">
                   <input
+                    id="name"
                     type="text"
                     class="input-field"
                     autocomplete="off"
@@ -96,6 +98,7 @@
 
                 <div class="input-wrap">
                   <input
+                    id="password"
                     type="password"
                     minlength="4"
                     class="input-field"
@@ -118,9 +121,9 @@
 
           <div class="carousel">
             <div class="images-wrapper">
-              <img src="./img/image1.png" class="image img-1 show" alt="" />
-              <img src="./img/image2.png" class="image img-2" alt="" />
-              <img src="./img/image3.png" class="image img-3" alt="" />
+              <img src="public/img/image1.png" class="image img-1 show" alt="" />
+              <img src="public/img/image2.png" class="image img-2" alt="" />
+              <img src="public/img/image3.png" class="image img-3" alt="" />
             </div>
 
             <div class="text-slider">
@@ -146,6 +149,6 @@
 
     <!-- Javascript file -->
 
-    <script src="js/stud_login.js"></script>
+    <script src="public/js/stud_login.js"></script>=
   </body>
 </html>
